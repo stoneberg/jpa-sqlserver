@@ -3,7 +3,6 @@ package com.stone.play.mssql.custom.controller;
 import com.stone.play.common.response.ResponseDto;
 import com.stone.play.mssql.custom.dto.CustomDto;
 import com.stone.play.mssql.custom.service.CustomService;
-import com.stone.play.mssql.product.dto.ProductDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;

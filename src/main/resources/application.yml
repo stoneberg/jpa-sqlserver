@@ -1,0 +1,30 @@
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+    context-path: /cesco
+  tomcat:
+    max-swallow-size: -1
+
+logging:
+  config: classpath:logback/logback-spring.xml
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: -1
+      max-request-size: -1
+  ######### active profile
+  profiles:
+    active: local # set deploy profile
+  banner:
+    ######### active profile
+    location: classpath:banner/banner.txt
+  messages:
+    basename: i18n/messages
+    encoding: UTF-8
+  thymeleaf:
+    cache: false
